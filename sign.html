@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+      <!-- 引入 Bootstrap Helvetica Neue,Arial,,Helvetica-->
+      <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+      <link href="Font-Awesome-3.2.1\css\font-awesome.min.css" rel="stylesheet">
+  <title>sign In</title>
+  <style type="text/css">
+  html{font-size: 100%;}
+    body{font-family: 'Lato',Arial,Helvetica,sans-serif;font-size: 15px;font-size: 1rem;font-weight: 300;}
+    a{text-decoration: none;}
+  /*head*/
+      .main{border-bottom: 1px solid hsl(0, 0%, 91%);box-shadow: 1px 0 1px hsl(0, 0%, 91%);}
+      .navbar-brand img{width: 32px;}
+      .navbar-brand span{font-size: 26px;position: relative;top:5px;color: black;}
+      .navbar-brand{margin-top: 9px;margin-left: -15px;}
+      .navbar-header{background-color: white;}
+      a.navbar-link{ margin-top: 17px;line-height: 20px;color: gray;font-size: 15px;}
+      .navbar-brand img{ width: 32px; display: inline-block;}
+      #navbar-content a:hover{background-color: white;color: black;}
+      #navbar-content{margin-bottom: 16px;}
+      .tb li a{border: 1px solid black;padding: 6px 9px;display: inline-block;margin-top: 24px;margin-left: 30px;border-radius: 5px;}
+      .content{margin-top: 60px;}
+      .form-control{}
+      .content-row{padding-bottom: 80px;border-bottom: 1px solid hsl(0, 0%, 91%);}
+      .content-title{background-color: hsl(204, 35%, 29%);color: white;border-top-left-radius: 6px;border-top-right-radius: 6px;font-size: 22px;padding: 10px 20px;}
+      .content-input{border: 2px solid gray;height: 100%;overflow: hidden;border-top: none!important;padding: 20px;border-bottom-left-radius: 6px;border-bottom-left-radius: 6px;}
+      .content-email{margin-top: 20px;}
+      .form-group{font-size: 18px;}
+      .col-xs-10{padding: 0;}
+      .strike{overflow: hidden;display: block;text-align: center;margin-top: 40px;}
+      .strike span{display: inline-block;font-size: 18px;position: relative;color: hsl(0, 0%, 51%);}
+      .strike span:before,.strike span:after{content: "";background: hsl(0, 0%, 92%);width: 9999px;top: 50%;position: absolute;height: 2px;}
+      .strike span:before{right: 100%;margin-left: 15px;}
+      .strike span:after{left: 100%;margin-left: 15px;}
+      .content-btn{background-color: hsl(120, 39%, 54%);border-color: hsl(120, 39%, 49%);color: white;padding: 10px 40px;font-size: 18px;}
+      .content-btn:hover{background-color:hsl(120, 40%, 44%);border-color: hsl(120, 40%, 37%);color: white; }
+      .content-sign{margin-top: 30px;text-align: center;}
+      .content-sign a{border: 1px solid hsl(0, 0%, 68%);padding: 10px 40px;color: hsl(0, 0%, 20%);border-radius: 6px;font-size: 18px;}
+      .content-sign a:hover{background-color: hsl(0, 0%, 90%);text-decoration: none;}
+      .content-sign i{}
+      .content-sign i:before{content: "\f09b";font-size: 18px;}
+      .content-sign i{margin-right: 5px;font: normal normal normal 14px/1 FontAwesome; }
+      .content-tip{margin-top: 50px;font-size: 18px;text-align: center;}
+      .footer{margin-top: 60px;margin-bottom: 60px;}
+      .footer li{list-style: none;font-size: 14px;margin-right: 10px;}
+      .u1 li,.u2 li,.u3 li{float: left;}
+      .ul{text-align: left!important;}
+      .u2{margin-left: 70px;}
+      .u2 li a:hover{text-decoration: none;}
+      .u2 li i{font: normal normal normal 14px/1 FontAwesome;margin-right: 5px;}
+      .li1 i:before,.li2 i:before,.li3 i:before{font-size: 20px;}
+      .li1 i:before{content: "\f09b"; }
+      .li2 i:before{content: "\f081";}
+      .li3 i:before{content: "\f082"; }
+      .li4{margin-right: 0!important;}
+  </style>
+</head>
+<body>
+<div class="main">
+  <div class="container">    
+   <div class="navbar-header" >
+       <a href="/" class="navbar-brand"><img src="wakatime-120.png"><span>WakeTime</span></a>
+      </div>
+      <div id="navbar-content" class=" navbar-right collapse navbar-collapse" >
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#" class="navbar-link">FEATURES</a></li>
+          <li><a href="#" class="navbar-link">PRICING</a></li>
+          <li><a href="#" class="navbar-link">DOCS</a></li>
+          <li><a href="#" class="navbar-link">BLOG</a></li>
+          </ul>
+        <ul class="nav navbar-nav tb">
+        <li><a href="#" class="navbar-link">Log In</a></li></ul>
+      </div> 
+   </div>
+  </div>
+</div>
+  <div class="container content">
+    <div class="row content-row">
+      <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+        <div class="content-title">Create a New Account</div>
+        <div class="content-input">
+          <div class="row col-xs-10 col-xs-offset-1">
+            <form>
+              <div class="form-group content-email">
+                <label for="exampleInputEmail1">Your Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="e.g.,wally@goodmail.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Choose a password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="6-200 characters">
+              </div>
+              <button type="submit" class="btn btn-default content-btn">Creat a New Account</button>
+            </form>
+          </div>
+          <div class="row col-xs-12 col-sm-10 col-xs-offset-1"><div class="strike"><span >or</span></div></div>
+          <div class="row col-xs-12   content-sign"><a href=""><i></i>Sign up with GitHub</a></div>
+          <div class="row col-xs-12  content-tip">Already have an account? <a href="">Log in.</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row footer">
+      <div class="col-xs-12 col-md-4">
+        <ul class="u1">
+          <li>© 2016 WakaTime</li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <ul class="u2">
+          <li class="li1"><a href=""><i></i></a></li>
+          <li class="li2"><a href=""><i></i></a></li>
+          <li class="li3"><a href=""><i></i></a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <ul class="u3">
+          <li><a href="">Supported IDEs</a></li>
+          <li><a href="">Integrations</a></li>
+          <li><a href="">Leaderboards</a></li>
+          <li class="li4"><a href="">Help</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

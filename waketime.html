@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap 模板</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+      <!-- 引入 Bootstrap Helvetica Neue,Arial,,Helvetica-->
+      <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+      <link href="C:\Users\Administrator\Desktop\新建文件夹 (2)\Font-Awesome-3.2.1\css\font-awesome.min.css" rel="stylesheet">
+      <style type="text/css">
+      html{font-size: 100%;}
+      body{font-family: 'Lato',Arial,Helvetica,sans-serif;font-size: 16px;font-size: 1rem;font-weight: 300;}
+      .navbar-brand span{font-size: 26px;position: relative;top:5px;color: black;}
+      .navbar-header{background-color: white;}
+      a.navbar-link{margin-top: 17px;line-height: 20px;color: gray;font-size: 15px;}
+      .navbar-brand img{ width: 32px; display: inline-block;}
+      #navbar-content a:hover{background-color: white;color: black;}
+      .c1{z-index: 1;position: absolute;top: 118px;}
+      .tb li a{border: 1px solid black;padding: 6px 9px;display: inline-block;margin-top: 24px;margin-left: 30px;border-radius: 5px;}
+      .center-xs{text-align: center;}
+      .a1 h1{font-weight: 300;}
+      .atf{background-color: hsl(209, 33%, 48%);color: white;margin-top: 15px;}
+      .atf h1{font-size: 3.25rem;margin-top: 20px;font-weight: 300;}
+      .atf h2{color: hsl(199, 100%, 91%);}
+      .b1{width: 100%;}
+      .a1 h1,.b1 h2{font-weight: 300;text-shadow:0 2px 0 hsla(0, 0%, 0%, 0.3);}
+      .b1{background-color:;z-index: 3;position: relative;opacity: 0.9;}
+      .a1{margin-top: 70px;}
+      .m-top{margin-top: 60px;margin-bottom: 70px;}
+      .left{text-align: right;}
+      .right{text-align: left; } 
+      .right a{background-color: hsl(209, 33%, 48%);border:1px solid white;}
+      .right a:hover{background-color:hsl(209, 33%, 48%);border:1px solid hsl(120, 40%, 37%);color:hsl(120, 40%, 37%);   }
+      .metric{background-color: hsl(208, 20%, 26%);color: hsl(0, 100%, 100%);padding-top: 50px;padding-bottom: 70px;position: relative;}
+      .metric-value{font-size: 42px;font-weight: 100;white-space: nowrap;}
+      .metric-title{color: hsl(210, 8%, 85%);font-size: 1.3rem;font-weight: 300;}
+      .features{padding-top:60px ;padding-bottom:70px;position: relative;}
+      .fea_tuer{position: relative;height: 100px;}
+      .page{left: 70px;position: absolute;text-align: left!important;color: hsl(0, 0%, 41%);top: 50px;}
+      .fa-car i,.fa-bar i,.fa-dar i{font: normal normal normal 14px/1 FontAwesome;font-size: 18px;}
+      .fa-car i:before{content:"\f121"; }
+      .fa-bar i:before{content:"\f080"; }
+      .fa-dar i:before{content:"\f0d6"; }
+      .fa-car,.fa-bar,.fa-dar{position: absolute;border: 2px solid hsl(0, 0%, 0%);border-radius: 50%;padding: 10px;left: 6px;
+        top:16px;}
+      .features h2{left: 70px;font-size: 1.5rem;position: absolute;left: 70px; top: 0;}
+      #myCarousel{padding-top: 60px;}
+      .btn{border: 1px solid hsl(120, 40%, 37%);padding: 15px 30px;margin-bottom: 20px;font-size: 1.125rem;color: white;background-color: hsl(120, 40%, 44%);}
+      .pai{display: inline-block;position: absolute;top: 0px;}
+      .btn:hover{color: white;background-color:hsl(120, 40%, 37%); }
+      .fa{font: normal normal normal 14px/1 FontAwesome;}
+      .testimonials{background-color: hsl(208, 20%, 26%);padding-top: 50px;padding-bottom: 120px;color: white;position: relative;}
+      .testimonials h1{margin-bottom: 40px;color: hsl(210, 8%, 85%);}
+      .wrapper{margin-top: 20px;color: hsl(210, 8%, 85%);}
+      .sp1{font-size: 14px;font-weight: 800;}
+      .sp2{font-size: 14px;font-weight: 500;margin-left: 7px;}
+      .carousel-inner quotation{color: hsl(210, 8%, 85%);}
+      .carousel-indicators{bottom: 60px;}
+      .open-source{padding-top: 60px;padding-bottom: 40px;}
+      .openi i:before{content: "\f09b";font-size: 36px;}
+      .openi i{font: normal normal normal 14px/1 FontAwesome;margin-right: 10px;}
+
+      .col-md-6{padding-left: 5px;padding-right: 5px;}
+      .open-source p{margin-top: 20px;font-size: 1.3rem;padding-right: 5px;padding-left: 5px;}
+      .sign{margin-top: 40px;}
+      .footer{background-color: black;}
+      .u-title a{font-size: 1.3rem!important;color: white!important;}
+      .footer li{list-style: none;margin-top: 10px;}
+      .footer li a{color: hsl(0, 0%, 66%);font-size: 0.9rem;}
+      .d1{margin-top: 60px;}
+
+      </style>
+   </head>
+   <body>
+  <div class="container">    
+   <div class="navbar-header" >
+      
+       <a href="/" class="navbar-brand"><img src="wakatime-120.png"><span>WakeTime</span></a>
+      </div>
+      <div id="navbar-content" class=" navbar-right collapse navbar-collapse" >
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#" class="navbar-link">FEATURES</a></li>
+          <li><a href="#" class="navbar-link">PRICING</a></li>
+          <li><a href="#" class="navbar-link">DOCS</a></li>
+          <li><a href="#" class="navbar-link">BLOG</a></li>
+          </ul>
+        <ul class="nav navbar-nav tb">
+        <li><a href="#" class="navbar-link">Log In</a></li></ul>
+      </div> 
+   </div>
+  </div>
+  <div class="atf">
+     <svg width="1349" height="424" class="c1">
+     <g transform="translate(-2,60)">
+    <g class="layer" style="fill: #335f88;">
+       <rect x="1.8636363636363638" y="357.1639506931547" width="21.431818181818183" height="6.836049306845325"></rect>
+       <rect x="25.15909090909091" y="354.9495152808062" width="21.431818181818183" height="9.050484719193776"></rect>
+       <rect x="48.45454545454546" y="357.29397115641785" width="21.431818181818183" height="6.706028843582146"></rect>
+       <rect x="71.75" y="356.6051788461217" width="21.431818181818183" height="7.394821153878297"></rect>
+       <rect x="95.04545454545455" y="353.5629281084591" width="21.431818181818183" height="10.437071891540882"></rect>
+       <rect x="118.3409090909091" y="352.9757718682055" width="21.431818181818183" height="11.024228131794473"></rect>
+       <rect x="141.63636363636365" y="354.1205631517294" width="21.431818181818183" height="9.879436848270586"></rect>
+       <rect x="164.9318181818182" y="354.1933529775049" width="21.431818181818183" height="9.806647022495099"></rect>
+       <rect x="188.22727272727275" y="357.82219981544847" width="21.431818181818183" height="6.177800184551529"></rect>
+       <rect x="211.5227272727273" y="353.4624950638524" width="21.431818181818183" height="10.537504936147627"></rect>
+       <rect x="234.81818181818184" y="353.80812478535205" width="21.431818181818183" height="10.19187521464795"></rect>
+       <rect x="258.1136363636364" y="351.49843640500274" width="21.431818181818183" height="12.501563594997265"></rect>
+       <rect x="281.40909090909093" y="346.8309037269887" width="21.431818181818183" height="17.16909627301129"></rect>
+       <rect x="304.7045454545455" y="335.82019527895966" width="21.431818181818183" height="28.17980472104034"></rect>
+       <rect x="328" y="312.23230986455076" width="21.431818181818183" height="51.76769013544924"></rect>
+       <rect x="351.29545454545456" y="277.07810998149006" width="21.431818181818183" height="86.92189001850994"></rect>
+       <rect x="374.5909090909091" y="227.90966699858203" width="21.431818181818183" height="136.09033300141797"></rect>
+       <rect x="397.8863636363637" y="176.09896936812117" width="21.431818181818183" height="187.90103063187883"></rect>
+       <rect x="421.18181818181824" y="130.21790224590526" width="21.431818181818183" height="233.78209775409474"></rect>
+       <rect x="444.47727272727275" y="103.39885347889005" width="21.431818181818183" height="260.60114652110997"></rect>
+       <rect x="467.7727272727273" y="102.48234832098481" width="21.431818181818183" height="261.5176516790152"></rect>
+       <rect x="491.06818181818187" y="118.71123070813904" width="21.431818181818183" height="245.28876929186094"></rect>
+       <rect x="514.3636363636364" y="145.65080868051945" width="21.431818181818183" height="218.34919131948055"></rect>
+       <rect x="537.659090909091" y="164.56939265866816" width="21.431818181818183" height="199.43060734133184"></rect>
+       <rect x="560.9545454545455" y="180.91373444689793" width="21.431818181818183" height="183.08626555310207"></rect>
+       <rect x="584.25" y="207.665625305844" width="21.431818181818183" height="156.334374694156"></rect>
+       <rect x="607.5454545454546" y="254.3062148919958" width="21.431818181818183" height="109.69378510800419"></rect>
+       <rect x="630.8409090909091" y="300.3308502471175" width="21.431818181818183" height="63.669149752882504"></rect>
+       <rect x="654.1363636363636" y="331.5957125819395" width="21.431818181818183" height="32.404287418060505"></rect>
+       <rect x="677.4318181818182" y="345.81769277781046" width="21.431818181818183" height="18.182307222189536"></rect>
+       <rect x="700.7272727272727" y="354.03261539651675" width="21.431818181818183" height="9.967384603483254"></rect>
+       <rect x="724.0227272727274" y="355.1808059054982" width="21.431818181818183" height="8.819194094501825"></rect>
+       <rect x="747.3181818181819" y="352.56157264644133" width="21.431818181818183" height="11.438427353558666"></rect>
+       <rect x="770.6136363636364" y="355.93561447632607" width="21.431818181818183" height="8.064385523673934"></rect>
+       <rect x="793.909090909091" y="354.2695169502183" width="21.431818181818183" height="9.730483049781697"></rect>
+       <rect x="817.2045454545455" y="355.7866953920337" width="21.431818181818183" height="8.213304607966279"></rect>
+       <rect x="840.5000000000001" y="356.06086410337343" width="21.431818181818183" height="7.939135896626567"></rect>
+       <rect x="863.7954545454546" y="356.9909565304056" width="21.431818181818183" height="7.009043469594417"></rect>
+       <rect x="887.0909090909091" y="352.8895432419496" width="21.431818181818183" height="11.110456758050418"></rect>
+       <rect x="910.3863636363637" y="355.8294693427126" width="21.431818181818183" height="8.170530657287372"></rect>
+       <rect x="933.6818181818182" y="356.9888888930517" width="21.431818181818183" height="7.011111106948306"></rect>
+       <rect x="956.9772727272727" y="357.7776544493362" width="21.431818181818183" height="6.2223455506638174"></rect>
+       <rect x="980.2727272727274" y="356.1646675009448" width="21.431818181818183" height="7.835332499055198"></rect>
+       <rect x="1003.5681818181819" y="354.9472285940261" width="21.431818181818183" height="9.052771405973886"></rect>
+       <rect x="1026.8636363636363" y="357.32142488904896" width="21.431818181818183" height="6.678575110951044"></rect>
+       <rect x="1050.1590909090908" y="354.43310425569257" width="21.431818181818183" height="9.56689574430743"></rect>
+       <rect x="1073.4545454545455" y="356.4843680240083" width="21.431818181818183" height="7.51563197599171"></rect>
+       <rect x="1096.75" y="356.31115411142747" width="21.431818181818183" height="7.68884588857253"></rect>
+       <rect x="1120.0454545454545" y="356.6135365735776" width="21.431818181818183" height="7.386463426422381"></rect>
+       <rect x="1143.340909090909" y="356.87951798877447" width="21.431818181818183" height="7.120482011225533"></rect>
+       <rect x="1166.6363636363635" y="354.30631465677743" width="21.431818181818183" height="9.693685343222569"></rect>
+       <rect x="1189.9318181818182" y="355.21260016377266" width="21.431818181818183" height="8.787399836227337"></rect>
+       <rect x="1213.2272727272727" y="356.250555224612" width="21.431818181818183" height="7.749444775387985"></rect>
+       <rect x="1236.5227272727273" y="352.9785945556553" width="21.431818181818183" height="11.02140544434468"></rect>
+       <rect x="1259.8181818181818" y="356.97670016639665" width="21.431818181818183" height="7.023299833603346"></rect>
+       <rect x="1283.1136363636363" y="353.1751026805668" width="21.431818181818183" height="10.824897319433205"></rect>
+       <rect x="1306.4090909090908" y="355.83999281813345" width="21.431818181818183" height="8.160007181866547"></rect>
+       <rect x="1329.7045454545455" y="354.00359704075487" width="21.431818181818183" height="9.996402959245131"></rect></g>
+    <g class="layer" style="fill: #38648f;">
+       <rect x="1.8636363636363638" y="332.664108764539" width="21.431818181818183" height="24.499841928615695"></rect>
+       <rect x="25.15909090909091" y="315.6002910320079" width="21.431818181818183" height="39.34922424879835"></rect>
+       <rect x="48.45454545454546" y="302.55528181161293" width="21.431818181818183" height="54.738689344804925"></rect>
+       <rect x="71.75" y="288.4514045210807" width="21.431818181818183" height="68.15377432504101"></rect>
+       <rect x="95.04545454545455" y="269.9377007815802" width="21.431818181818183" height="83.62522732687893"></rect>
+       <rect x="118.3409090909091" y="250.17774948390934" width="21.431818181818183" height="102.79802238429619"></rect>
+       <rect x="141.63636363636365" y="234.72141071065667" width="21.431818181818183" height="119.39915244107274"></rect>
+       <rect x="164.9318181818182" y="247.16574327836057" width="21.431818181818183" height="107.02760969914434"></rect>
+       <rect x="188.22727272727275" y="278.5740629296362" width="21.431818181818183" height="79.24813688581224"></rect>
+       <rect x="211.5227272727273" y="307.57039469157866" width="21.431818181818183" height="45.89210037227372"></rect>
+       <rect x="234.81818181818184" y="332.579393287336" width="21.431818181818183" height="21.22873149801603"></rect>
+       <rect x="258.1136363636364" y="338.7338414876034" width="21.431818181818183" height="12.764594917399336"></rect>
+       <rect x="281.40909090909093" y="335.1779788890755" width="21.431818181818183" height="11.65292483791319"></rect>
+       <rect x="304.7045454545455" y="326.71308821628446" width="21.431818181818183" height="9.107107062675198"></rect>
+       <rect x="328" y="302.36659473122523" width="21.431818181818183" height="9.865715133325523"></rect>
+       <rect x="351.29545454545456" y="266.4063647443288" width="21.431818181818183" height="10.671745237161247"></rect>
+       <rect x="374.5909090909091" y="217.48436140279958" width="21.431818181818183" height="10.425305595782447"></rect>
+       <rect x="397.8863636363637" y="167.12365551435758" width="21.431818181818183" height="8.975313853763595"></rect>
+       <rect x="421.18181818181824" y="124.32597984536183" width="21.431818181818183" height="5.891922400543436"></rect>
+       <rect x="444.47727272727275" y="93.14414290470432" width="21.431818181818183" height="10.254710574185722"></rect>
+       <rect x="467.7727272727273" y="94.26621966463203" width="21.431818181818183" height="8.21612865635278"></rect>
+       <rect x="491.06818181818187" y="110.80904002054089" width="21.431818181818183" height="7.90219068759815"></rect>
+       <rect x="514.3636363636364" y="135.12214377555185" width="21.431818181818183" height="10.528664904967599"></rect>
+       <rect x="537.659090909091" y="154.4875695876139" width="21.431818181818183" height="10.08182307105426"></rect>
+       <rect x="560.9545454545455" y="172.69543723782672" width="21.431818181818183" height="8.21829720907121"></rect>
+       <rect x="584.25" y="198.57449569681938" width="21.431818181818183" height="9.09112960902462"></rect>
+       <rect x="607.5454545454546" y="230.11726295567064" width="21.431818181818183" height="24.188951936325168"></rect>
+       <rect x="630.8409090909091" y="229.52126431446004" width="21.431818181818183" height="70.80958593265746"></rect>
+       <rect x="654.1363636363636" y="191.08956514912782" width="21.431818181818183" height="140.50614743281167"></rect>
+       <rect x="677.4318181818182" y="226.96738964342003" width="21.431818181818183" height="118.85030313439043"></rect>
+       <rect x="700.7272727272727" y="306.11983382030724" width="21.431818181818183" height="47.91278157620951"></rect>
+       <rect x="724.0227272727274" y="342.70973276945665" width="21.431818181818183" height="12.471073136041525"></rect>
+       <rect x="747.3181818181819" y="343.97107435039817" width="21.431818181818183" height="8.590498296043165"></rect>
+       <rect x="770.6136363636364" y="345.95923779852876" width="21.431818181818183" height="9.976376677797305"></rect>
+       <rect x="793.909090909091" y="344.40551163690185" width="21.431818181818183" height="9.864005313316454"></rect>
+       <rect x="817.2045454545455" y="345.89030146191226" width="21.431818181818183" height="9.896393930121462"></rect>
+       <rect x="840.5000000000001" y="348.578682574384" width="21.431818181818183" height="7.482181528989429"></rect>
+       <rect x="863.7954545454546" y="348.8038539158695" width="21.431818181818183" height="8.187102614536059"></rect>
+       <rect x="887.0909090909091" y="345.82826680098844" width="21.431818181818183" height="7.061276440961137"></rect>
+       <rect x="910.3863636363637" y="345.75740512063055" width="21.431818181818183" height="10.072064222082076"></rect>
+       <rect x="933.6818181818182" y="349.3624289551549" width="21.431818181818183" height="7.626459937896811"></rect>
+       <rect x="956.9772727272727" y="351.73235919931955" width="21.431818181818183" height="6.045295250016636"></rect>
+       <rect x="980.2727272727274" y="347.5690426491747" width="21.431818181818183" height="8.595624851770083"></rect>
+       <rect x="1003.5681818181819" y="346.985668678524" width="21.431818181818183" height="7.961559915502107"></rect>
+       <rect x="1026.8636363636363" y="346.84208079607623" width="21.431818181818183" height="10.479344092972724"></rect>
+       <rect x="1050.1590909090908" y="343.272772510802" width="21.431818181818183" height="11.160331744890584"></rect>
+       <rect x="1073.4545454545455" y="348.40770718759086" width="21.431818181818183" height="8.076660836417432"></rect>
+       <rect x="1096.75" y="345.3647692078049" width="21.431818181818183" height="10.946384903622572"></rect>
+       <rect x="1120.0454545454545" y="346.65964675461663" width="21.431818181818183" height="9.953889818960988"></rect>
+       <rect x="1143.340909090909" y="349.65161595121526" width="21.431818181818183" height="7.227902037559204"></rect>
+       <rect x="1166.6363636363635" y="343.18124606673575" width="21.431818181818183" height="11.125068590041678"></rect>
+       <rect x="1189.9318181818182" y="345.7993417898045" width="21.431818181818183" height="9.413258373968176"></rect>
+       <rect x="1213.2272727272727" y="346.5812401564499" width="21.431818181818183" height="9.66931506816212"></rect>
+       <rect x="1236.5227272727273" y="344.48903681148136" width="21.431818181818183" height="8.489557744173965"></rect>
+       <rect x="1259.8181818181818" y="348.71733269057614" width="21.431818181818183" height="8.259367475820511"></rect>
+       <rect x="1283.1136363636363" y="344.9105395572897" width="21.431818181818183" height="8.264563123277071"></rect>
+       <rect x="1306.4090909090908" y="342.2960402827712" width="21.431818181818183" height="13.54395253536228"></rect>
+       <rect x="1329.7045454545455" y="337.64457536909475" width="21.431818181818183" height="16.359021671660116"></rect></g>
+    <g class="layer" style="fill: #3d6996;">
+       <rect x="1.8636363636363638" y="323.96846608576857" width="21.431818181818183" height="8.695642678770412"></rect>
+       <rect x="25.15909090909091" y="308.48649584657306" width="21.431818181818183" height="7.11379518543481"></rect>
+       <rect x="48.45454545454546" y="292.78921104569355" width="21.431818181818183" height="9.76607076591938"></rect>
+       <rect x="71.75" y="282.4251182542179" width="21.431818181818183" height="6.026286266862769"></rect>
+       <rect x="95.04545454545455" y="261.501303956636" width="21.431818181818183" height="8.436396824944211"></rect>
+       <rect x="118.3409090909091" y="239.95388384729924" width="21.431818181818183" height="10.2238656366101"></rect>
+       <rect x="141.63636363636365" y="223.30273005499035" width="21.431818181818183" height="11.418680655666321"></rect>
+       <rect x="164.9318181818182" y="239.729995897242" width="21.431818181818183" height="7.435747381118574"></rect>
+       <rect x="188.22727272727275" y="268.1293710349531" width="21.431818181818183" height="10.444691894683103"></rect>
+       <rect x="211.5227272727273" y="300.0477679364734" width="21.431818181818183" height="7.52262675510525"></rect>
+       <rect x="234.81818181818184" y="324.33798615732405" width="21.431818181818183" height="8.241407130011964"></rect>
+       <rect x="258.1136363636364" y="327.3213143581142" width="21.431818181818183" height="11.412527129489206"></rect>
+       <rect x="281.40909090909093" y="328.57445739752023" width="21.431818181818183" height="6.603521491555284"></rect>
+       <rect x="304.7045454545455" y="318.66194416755997" width="21.431818181818183" height="8.051144048724495"></rect>
+       <rect x="328" y="291.43206941808546" width="21.431818181818183" height="10.934525313139773"></rect>
+       <rect x="351.29545454545456" y="251.15631208666986" width="21.431818181818183" height="15.250052657658955"></rect>
+       <rect x="374.5909090909091" y="197.1650673873079" width="21.431818181818183" height="20.319294015491693"></rect>
+       <rect x="397.8863636363637" y="140.3131946274185" width="21.431818181818183" height="26.81046088693907"></rect>
+       <rect x="421.18181818181824" y="82.19842614683746" width="21.431818181818183" height="42.127553698524366"></rect>
+       <rect x="444.47727272727275" y="31.981165239010693" width="21.431818181818183" height="61.16297766569363"></rect>
+       <rect x="467.7727272727273" y="14.556409247396267" width="21.431818181818183" height="79.70981041723576"></rect>
+       <rect x="491.06818181818187" y="18.392395476294553" width="21.431818181818183" height="92.41664454424634"></rect>
+       <rect x="514.3636363636364" y="30.774879494738645" width="21.431818181818183" height="104.3472642808132"></rect>
+       <rect x="537.659090909091" y="48.06791729885771" width="21.431818181818183" height="106.4196522887562"></rect>
+       <rect x="560.9545454545455" y="74.93170106416638" width="21.431818181818183" height="97.76373617366035"></rect>
+       <rect x="584.25" y="114.47695377393161" width="21.431818181818183" height="84.09754192288777"></rect>
+       <rect x="607.5454545454546" y="164.88719103846194" width="21.431818181818183" height="65.2300719172087"></rect>
+       <rect x="630.8409090909091" y="180.77589238972473" width="21.431818181818183" height="48.74537192473531"></rect>
+       <rect x="654.1363636363636" y="156.66507074070654" width="21.431818181818183" height="34.42449440842128"></rect>
+       <rect x="677.4318181818182" y="193.8675600434298" width="21.431818181818183" height="33.099829599990244"></rect>
+       <rect x="700.7272727272727" y="257.05683981553364" width="21.431818181818183" height="49.0629940047736"></rect>
+       <rect x="724.0227272727274" y="258.3130664699965" width="21.431818181818183" height="84.39666629946015"></rect>
+       <rect x="747.3181818181819" y="237.213971810552" width="21.431818181818183" height="106.75710253984616"></rect>
+       <rect x="770.6136363636364" y="263.6284580704614" width="21.431818181818183" height="82.33077972806734"></rect>
+       <rect x="793.909090909091" y="297.11035045621315" width="21.431818181818183" height="47.295161180688694"></rect>
+       <rect x="817.2045454545455" y="308.31742759943205" width="21.431818181818183" height="37.57287386248021"></rect>
+       <rect x="840.5000000000001" y="273.6944774733702" width="21.431818181818183" height="74.88420510101378"></rect>
+       <rect x="863.7954545454546" y="223.5212087287428" width="21.431818181818183" height="125.28264518712672"></rect>
+       <rect x="887.0909090909091" y="207.78500218715612" width="21.431818181818183" height="138.04326461383232"></rect>
+       <rect x="910.3863636363637" y="254.38583128336802" width="21.431818181818183" height="91.37157383726253"></rect>
+       <rect x="933.6818181818182" y="308.44655545563256" width="21.431818181818183" height="40.91587349952232"></rect>
+       <rect x="956.9772727272727" y="335.964406208257" width="21.431818181818183" height="15.767952991062543"></rect>
+       <rect x="980.2727272727274" y="337.1489619287927" width="21.431818181818183" height="10.420080720382032"></rect>
+       <rect x="1003.5681818181819" y="340.45413533570127" width="21.431818181818183" height="6.5315333428227405"></rect>
+       <rect x="1026.8636363636363" y="338.6353256416085" width="21.431818181818183" height="8.206755154467714"></rect>
+       <rect x="1050.1590909090908" y="337.5518605665115" width="21.431818181818183" height="5.720911944290492"></rect>
+       <rect x="1073.4545454545455" y="340.9363918890549" width="21.431818181818183" height="7.471315298535956"></rect>
+       <rect x="1096.75" y="335.62812135631447" width="21.431818181818183" height="9.736647851490432"></rect>
+       <rect x="1120.0454545454545" y="338.6936522935327" width="21.431818181818183" height="7.9659944610839375"></rect>
+       <rect x="1143.340909090909" y="343.0497419086092" width="21.431818181818183" height="6.6018740426060845"></rect>
+       <rect x="1166.6363636363635" y="334.3784842511572" width="21.431818181818183" height="8.802761815578549"></rect>
+       <rect x="1189.9318181818182" y="339.181097190495" width="21.431818181818183" height="6.618244599309492"></rect>
+       <rect x="1213.2272727272727" y="335.2978981213446" width="21.431818181818183" height="11.283342035105306"></rect>
+       <rect x="1236.5227272727273" y="336.4404882950583" width="21.431818181818183" height="8.048548516423068"></rect>
+       <rect x="1259.8181818181818" y="335.8440754787216" width="21.431818181818183" height="12.873257211854536"></rect>
+       <rect x="1283.1136363636363" y="331.04804233843186" width="21.431818181818183" height="13.862497218857868"></rect>
+       <rect x="1306.4090909090908" y="321.9640162043318" width="21.431818181818183" height="20.33202407843936"></rect>
+       <rect x="1329.7045454545455" y="316.03821617764567" width="21.431818181818183" height="21.606359191449087"></rect></g>
+    <g class="layer" style="fill: #426e9d;">
+       <rect x="1.8636363636363638" y="272.38403481320324" width="21.431818181818183" height="51.584431272565325"></rect>
+       <rect x="25.15909090909091" y="249.06498720802642" width="21.431818181818183" height="59.42150863854664"></rect>
+       <rect x="48.45454545454546" y="222.41054865659592" width="21.431818181818183" height="70.37866238909763"></rect>
+       <rect x="71.75" y="193.65178633263562" width="21.431818181818183" height="88.7733319215823"></rect>
+       <rect x="95.04545454545455" y="112.7361362428907" width="21.431818181818183" height="148.76516771374529"></rect>
+       <rect x="118.3409090909091" y="95.45917404464095" width="21.431818181818183" height="144.4947098026583"></rect>
+       <rect x="141.63636363636365" y="152.6675497039407" width="21.431818181818183" height="70.63518035104966"></rect>
+       <rect x="164.9318181818182" y="192.7150123835488" width="21.431818181818183" height="47.01498351369318"></rect>
+       <rect x="188.22727272727275" y="221.55261790722778" width="21.431818181818183" height="46.57675312772534"></rect>
+       <rect x="211.5227272727273" y="247.2219219808461" width="21.431818181818183" height="52.8258459556273"></rect>
+       <rect x="234.81818181818184" y="260.84039353550247" width="21.431818181818183" height="63.49759262182158"></rect>
+       <rect x="258.1136363636364" y="259.2290478454396" width="21.431818181818183" height="68.0922665126746"></rect>
+       <rect x="281.40909090909093" y="254.3649301953399" width="21.431818181818183" height="74.20952720218034"></rect>
+       <rect x="304.7045454545455" y="243.97606715579013" width="21.431818181818183" height="74.68587701176983"></rect>
+       <rect x="328" y="225.58650460908044" width="21.431818181818183" height="65.84556480900503"></rect>
+       <rect x="351.29545454545456" y="191.72592816079788" width="21.431818181818183" height="59.43038392587198"></rect>
+       <rect x="374.5909090909091" y="151.84103512555515" width="21.431818181818183" height="45.324032261752734"></rect>
+       <rect x="397.8863636363637" y="106.62289553901421" width="21.431818181818183" height="33.6902990884043"></rect>
+       <rect x="421.18181818181824" y="53.359936266158186" width="21.431818181818183" height="28.838489880679276"></rect>
+       <rect x="444.47727272727275" y="11.932392105689877" width="21.431818181818183" height="20.048773133320815"></rect>
+       <rect x="467.7727272727273" y="0" width="21.431818181818183" height="14.556409247396267"></rect>
+       <rect x="491.06818181818187" y="3.882477958878007" width="21.431818181818183" height="14.509917517416547"></rect>
+       <rect x="514.3636363636364" y="22.68724850597167" width="21.431818181818183" height="8.087630988766975"></rect>
+       <rect x="537.659090909091" y="41.66908195515623" width="21.431818181818183" height="6.398835343701478"></rect>
+       <rect x="560.9545454545455" y="68.77085496920883" width="21.431818181818183" height="6.160846094957549"></rect>
+       <rect x="584.25" y="106.8282510502541" width="21.431818181818183" height="7.648702723677516"></rect>
+       <rect x="607.5454545454546" y="158.06981138135663" width="21.431818181818183" height="6.817379657105306"></rect>
+       <rect x="630.8409090909091" y="172.83382055259625" width="21.431818181818183" height="7.942071837128481"></rect>
+       <rect x="654.1363636363636" y="150.8804210925441" width="21.431818181818183" height="5.7846496481624285"></rect>
+       <rect x="677.4318181818182" y="183.46711624118777" width="21.431818181818183" height="10.400443802242023"></rect>
+       <rect x="700.7272727272727" y="246.9517524233061" width="21.431818181818183" height="10.105087392227546"></rect>
+       <rect x="724.0227272727274" y="249.34965597791626" width="21.431818181818183" height="8.963410492080243"></rect>
+       <rect x="747.3181818181819" y="226.7333429178888" width="21.431818181818183" height="10.48062889266322"></rect>
+       <rect x="770.6136363636364" y="252.34200300116518" width="21.431818181818183" height="11.286455069296238"></rect>
+       <rect x="793.909090909091" y="291.3363112507132" width="21.431818181818183" height="5.774039205499946"></rect>
+       <rect x="817.2045454545455" y="297.5211282190265" width="21.431818181818183" height="10.796299380405571"></rect>
+       <rect x="840.5000000000001" y="264.5289669861883" width="21.431818181818183" height="9.165510487181905"></rect>
+       <rect x="863.7954545454546" y="216.23684069162613" width="21.431818181818183" height="7.284368037116678"></rect>
+       <rect x="887.0909090909091" y="197.00942353894482" width="21.431818181818183" height="10.775578648211308"></rect>
+       <rect x="910.3863636363637" y="245.52458458497225" width="21.431818181818183" height="8.861246698395775"></rect>
+       <rect x="933.6818181818182" y="299.3199617993287" width="21.431818181818183" height="9.12659365630384"></rect>
+       <rect x="956.9772727272727" y="324.85417762553254" width="21.431818181818183" height="11.11022858272446"></rect>
+       <rect x="980.2727272727274" y="326.8350839101575" width="21.431818181818183" height="10.313878018635194"></rect>
+       <rect x="1003.5681818181819" y="334.2403007797025" width="21.431818181818183" height="6.213834555998744"></rect>
+       <rect x="1026.8636363636363" y="332.0083770818738" width="21.431818181818183" height="6.626948559734728"></rect>
+       <rect x="1050.1590909090908" y="327.5467787727263" width="21.431818181818183" height="10.005081793785166"></rect>
+       <rect x="1073.4545454545455" y="329.5107384302968" width="21.431818181818183" height="11.42565345875812"></rect>
+       <rect x="1096.75" y="318.3338916202612" width="21.431818181818183" height="17.29422973605324"></rect>
+       <rect x="1120.0454545454545" y="305.5061324201866" width="21.431818181818183" height="33.187519873346105"></rect>
+       <rect x="1143.340909090909" y="290.2179291102446" width="21.431818181818183" height="52.83181279836458"></rect>
+       <rect x="1166.6363636363635" y="241.93815653452606" width="21.431818181818183" height="92.44032771663115"></rect>
+       <rect x="1189.9318181818182" y="206.9477301294105" width="21.431818181818183" height="132.2333670610845"></rect>
+       <rect x="1213.2272727272727" y="158.73598277057073" width="21.431818181818183" height="176.56191535077386"></rect>
+       <rect x="1236.5227272727273" y="133.16979655294298" width="21.431818181818183" height="203.2706917421153"></rect>
+       <rect x="1259.8181818181818" y="128.35794026865182" width="21.431818181818183" height="207.4861352100698"></rect>
+       <rect x="1283.1136363636363" y="143.53661851366545" width="21.431818181818183" height="187.5114238247664"></rect>
+       <rect x="1306.4090909090908" y="176.22364249863685" width="21.431818181818183" height="145.74037370569496"></rect>
+       <rect x="1329.7045454545455" y="212.67757785041087" width="21.431818181818183" height="103.3606383272348"></rect>
+    </g>
+    </g>
+    </svg-->
+    <div class="container b1">
+      <div class="row">
+        <div class="col-xs-12 center-xs a1">
+          <h1>Quantify your coding</h1>
+        </div>
+      </div>
+       <div class="row">
+          <div class="col-xs-12 center-xs " >
+            <h2>Metrics, insights, and time tracking automatically <br/>
+             generated from your programming activity.</h2>
+          </div>
+       </div>
+       <div class="row m-top" >
+          <div class="col-xs-12 col-sm-6 center-xs left" >
+            <a href="" class="btn">SIGN UP</a></div>
+          <div class="col-xs-12 col-sm-6 center-xs right" >
+            <a href="#c4" class="btn">LEARN MORE</a></div>
+       </div>
+    </div>
+  </div>
+   
+   
+      <div class="" >
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+         <!-- 轮播（Carousel）指标 -->
+         <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+         </ol>   
+         <!--轮播（Carousel）项目 -->
+         <div class="carousel-inner">
+         <div class="item active">
+          <img src="" alt="First slide">
+          <div class="carousel-caption">1</div>
+         </div>
+         <div class="item">
+          <img src="" alt="Second slide">
+          <div class="carousel-caption">2</div>
+         </div>
+         <div class="item">
+          <img src="" alt="Second slide">
+          <div class="carousel-caption">2</div>
+         </div>
+         <div class="item">
+          <img src="" alt="Second slide">
+          <div class="carousel-caption">2</div>
+         </div>
+         <div class="item">
+          <img src="" alt="Third slide">
+          <div class="carousel-caption">3</div>
+         </div>
+         <div class="item">
+          <img src="" alt="Four slide">
+          <div class="carousel-caption">4</div>
+         </div>
+         </div>
+         <!--轮播（Carousel）导航 -->
+         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div> 
+      </div>
+    </div>
+    <div class="metric"  >
+      <div class="container">
+        <div class="row" >
+           <a href="" name="c4" class="pai"></a>
+          <div class="col-xs-12 col-sm-4 center-xs" >
+            <div class="metric-value">6,897,039</div>
+            <div class="metric-title">Hours Coded</div>
+          </div>
+          <div class="col-xs-12 col-sm-4 center-xs" >
+            <div class="metric-value"><a href="" >30</a></div>
+            <div class="metric-title"><a href="">Editors Supported</a></div>
+          </div>
+          <div class="col-xs-12 col-sm-4 center-xs" >
+            <div class="metric-value">780</div>
+            <div class="metric-title">Languages Detected</div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="features">
+      <div class="container">
+        <div class="row center-xs" >
+        <a href="" class="btn">INSTALL THE OPEN-SOURCE PLUGIN</a>
+        </div>
+        <div class="row fea_tuer" >
+          <div class="col-xs-12 col-sm-4 center-xs" >
+            <span  class="fa-car"><i></i></span>
+            <h2>Measure Your Coding</h2>
+            <div class="page">Get real-time metrics per project, file, branch, commit, feature, operating system, editor/IDE, language, etc.</div>
+          </div>
+          <div class="col-xs-12 col-sm-4 center-xs" >
+            <span class="fa-bar"><i></i></span>
+            <h2>Gain Insights</h2>
+            <div class="page">Do you spend more time in Ruby, JavaScript or Python? Discover how you utilize technologies in your projects.</div>
+          </div>
+          <div class="col-xs-12 col-sm-4 center-xs" >
+            <span class="fa-dar"><i></i></span>
+            <h2>Improve Your Productivity</h2>
+            <div class="page">See how you compare on the <a href="">leaderboards</a> with your daily coding average</div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
+    <div class="testimonials">
+      <div class="container">
+        <div class="row center-xs">
+          <h1>Customer Testimonials</h1>
+        </div>
+        <div class="row">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+         </ol> 
+         <div class="carousel-inner">
+           <div class="item active col-xs-12 col-md-8 col-md-offset-2 center-xs">
+              <quotation><i class="fa fa-quote-left"></i>You can't improve what you don't measure. With WakaTime I optimize my throughput each day and also use the  data to get better at estimates.<i class="fa fa-quote-right"></i></quotation>
+              <div class="wrapper"><span class="sp1">Robert Adams</span><span class="sp2">Head of engineering, ZeroCater</span></div>
+              <div class="carousel-caption"></div>
+           </div>
+           <div class="item col-xs-12 col-md-8 col-md-offset-2 center-xs">
+              <quotation><i class="fa fa-quote-left"></i>WakaTime tells our team exactly how much time we are spending working on a homepage, interior page or a header. The result has been more accurate estimates, and better feedback to designers.<i class="fa fa-quote-right"></i></quotation>
+              <div class="wrapper"><span class="sp1">Rob Skidmore</span><span class="sp2">Director of Technology, Sebo Marketing</span></div>
+              <div class="carousel-caption"></div>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="open-source">
+      <div class="container">
+        <div class="row center-xs openi">
+          <h1><i></i>Open Source</h1>
+        </div>
+        <div class="row center-xs ">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 center-xs">
+          <p>We value Open Source and make a point to release all our plugins on <a href="">GitHub</a> under a BSD License.</p>
+        </div></div>
+        <div class="row center-xs">
+          <a href="" class="btn sign">GET YOUR INSIGHTS NOW</a>
+        </div>
+      </div>
+    </div>
+
+
+    
+    
+
+
+    <div class="footer">
+      <div class="container">
+        <div class="row d1">
+          <div class="col-xs-12 col-md-3">
+            <ul>
+              <li class="u-title"><a href="">WakaTime</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">© 2016 WakaTime</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <ul>
+              <li class="u-title"><a href="">PRODUCT</a></li>
+              <li><a href="">Supported IDEs</a></li>
+              <li><a href="">Integrations</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Leaderboards</a></li>
+
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <ul>
+              <li class="u-title"><a href="">LEARN</a></li>
+              <li><a href="">Documentation</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Troubleshooting</a></li>
+              <li><a href="">Write a Plugin</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <ul>
+              <li class="u-title"><a href="">COMMUNITY</a></li>
+              <li><a href="">User Creations</a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+        
+      
+      <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+      <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+      <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+      <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+      
+      </script>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
