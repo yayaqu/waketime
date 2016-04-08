@@ -3,9 +3,10 @@
    <head>
       <title>Bootstrap 模板</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
       <!-- 引入 Bootstrap Helvetica Neue,Arial,,Helvetica-->
       <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-      <link href="C:\Users\Administrator\Desktop\新建文件夹 (2)\Font-Awesome-3.2.1\css\font-awesome.min.css" rel="stylesheet">
+      <link href="Font-Awesome-3.2.1\css\font-awesome.min.css" rel="stylesheet">
       <style type="text/css">
       html{font-size: 100%;}
       body{font-family: 'Lato',Arial,Helvetica,sans-serif;font-size: 16px;font-size: 1rem;font-weight: 300;}
@@ -54,7 +55,7 @@
       .sp1{font-size: 14px;font-weight: 800;}
       .sp2{font-size: 14px;font-weight: 500;margin-left: 7px;}
       .carousel-inner quotation{color: hsl(210, 8%, 85%);}
-      .carousel-indicators{bottom: 60px;}
+      .carousel-indicators{bottom: -80px;}
       .open-source{padding-top: 60px;padding-bottom: 40px;}
       .openi i:before{content: "\f09b";font-size: 36px;}
       .openi i{font: normal normal normal 14px/1 FontAwesome;margin-right: 10px;}
@@ -67,6 +68,8 @@
       .footer li{list-style: none;margin-top: 10px;}
       .footer li a{color: hsl(0, 0%, 66%);font-size: 0.9rem;}
       .d1{margin-top: 60px;}
+      .tab_01{background-color: gray;}
+      .tab_02{bottom: 10px;}
 
       </style>
    </head>
@@ -329,7 +332,7 @@
        <rect x="1329.7045454545455" y="212.67757785041087" width="21.431818181818183" height="103.3606383272348"></rect>
     </g>
     </g>
-    </svg-->
+    </svg>
     <div class="container b1">
       <div class="row">
         <div class="col-xs-12 center-xs a1">
@@ -352,10 +355,10 @@
   </div>
    
    
-      <div class="" >
+      <div class="tab_01" >
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
          <!-- 轮播（Carousel）指标 -->
-         <ol class="carousel-indicators">
+         <ol class="carousel-indicators tab_02">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -367,27 +370,27 @@
          <div class="carousel-inner">
          <div class="item active">
           <img src="" alt="First slide">
-          <div class="carousel-caption">1</div>
+          
          </div>
          <div class="item">
           <img src="" alt="Second slide">
-          <div class="carousel-caption">2</div>
-         </div>
-         <div class="item">
-          <img src="" alt="Second slide">
-          <div class="carousel-caption">2</div>
-         </div>
-         <div class="item">
-          <img src="" alt="Second slide">
-          <div class="carousel-caption">2</div>
+          
          </div>
          <div class="item">
           <img src="" alt="Third slide">
-          <div class="carousel-caption">3</div>
+          
          </div>
          <div class="item">
           <img src="" alt="Four slide">
-          <div class="carousel-caption">4</div>
+          
+         </div>
+         <div class="item">
+          <img src="" alt="Fir slide">
+          
+         </div>
+         <div class="item">
+          <img src="" alt="Six slide">
+          
          </div>
          </div>
          <!--轮播（Carousel）导航 -->
@@ -447,22 +450,22 @@
         <div class="row center-xs">
           <h1>Customer Testimonials</h1>
         </div>
-        <div class="row">
+        <div class="row carousel slide" id="carousel-example-generic" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
          </ol> 
-         <div class="carousel-inner">
+         <div class="carousel-inner" role="listbox">
            <div class="item active col-xs-12 col-md-8 col-md-offset-2 center-xs">
               <quotation><i class="fa fa-quote-left"></i>You can't improve what you don't measure. With WakaTime I optimize my throughput each day and also use the  data to get better at estimates.<i class="fa fa-quote-right"></i></quotation>
-              <div class="wrapper"><span class="sp1">Robert Adams</span><span class="sp2">Head of engineering, ZeroCater</span></div>
-              <div class="carousel-caption"></div>
+              <div class="wrapper"><span class="sp1">Robert Adams</span>
+              <span class="sp2">Head of engineering, ZeroCater</span></div>
            </div>
            <div class="item col-xs-12 col-md-8 col-md-offset-2 center-xs">
               <quotation><i class="fa fa-quote-left"></i>WakaTime tells our team exactly how much time we are spending working on a homepage, interior page or a header. The result has been more accurate estimates, and better feedback to designers.<i class="fa fa-quote-right"></i></quotation>
-              <div class="wrapper"><span class="sp1">Rob Skidmore</span><span class="sp2">Director of Technology, Sebo Marketing</span></div>
-              <div class="carousel-caption"></div>
-           </div>
+              <div class="wrapper"><span class="sp1">Rob Skidmore</span>
+              <span class="sp2">Director of Technology, Sebo Marketing</span></div>
+           </div> 
          </div>
         </div>
       </div>
@@ -541,7 +544,7 @@
       <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
       <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
       <script type="text/javascript">
-      
+
       </script>
    </body>
 </html>
